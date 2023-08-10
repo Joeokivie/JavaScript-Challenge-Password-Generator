@@ -26,3 +26,7 @@ THEN the password is either displayed in an alert or written to the page
 
 # Mock up
 ![image](https://github.com/Joeokivie/JavaScript-Challenge-Password-Generator/assets/138530272/3f0f67d7-bf83-4973-bf0e-0e980e939d8b)
+
+# Deployment
+[
+](https://joeokivie.github.io/JavaScript-Challenge-Password-Generator/)https://joeokivie.github.io/JavaScript-Challenge-Password-Generator/
