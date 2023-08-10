@@ -3,14 +3,13 @@ var generateBtn = document.querySelector("#generate")
 var numberchoice=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10];
 var lowercase= ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var uppercase= ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-var specialcharacter= ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
+var specialcharacter= ['@', '%', '+',  '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '_',];
 
-//function to generate password & empty stings to store user input
+//a password-generating function and null strings for input from users.
 function generatePassword() {
-    var allChar = "";
+    var allcharacters = "";
     var userPassword = "";
-}
-function generatePassword(){
+
     var finalpasswordchoices= []
     var passwordlength = prompt("please make sure your password is at least 8 characters and no more than 128 characters")
     console.log (passwordlength)
@@ -41,8 +40,17 @@ function generatePassword(){
     } else{
         console.log("false")
     }
-}
+    for (var i=0;i<passwordlength;i++) {
+        var randomindex= Math.floor(Math.random()*finalpasswordchoices.length)
+        
+        userPassword+=(finalpasswordchoices[randomindex].toString())
+        console.log(finalpasswordchoices[randomindex])
 
+    
+    } return userPassword
+    console.log(userPassword)
+}
+    
 
 // Write password to the #password input
 function writePassword() {
